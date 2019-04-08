@@ -4,23 +4,27 @@ PODS:
     - SDWebImage/Core (= 5.0.0)
   - SDWebImage/Core (5.0.0)
   - SnapKit (4.2.0)
+  - SXBanner (0.0.1):
+    - SDWebImage
 
 DEPENDENCIES:
   - Alamofire
-  - SDWebImage
   - SnapKit
+  - SXBanner
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
     - SDWebImage
     - SnapKit
+    - SXBanner
 
 SPEC CHECKSUMS:
   Alamofire: 16ce2c353fb72865124ddae8a57c5942388f4f11
   SDWebImage: 5de80a0302de9e377e62f47d2fa1304efff0e55f
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
+  SXBanner: 2cdac4cc4f0fb1f5d228793cc657eeedaa86e4a8
 
-PODFILE CHECKSUM: 9111b8a6f34b3fa35e3f527a276316f811558a22
+PODFILE CHECKSUM: f42b794847f2f7da9cf79401c3c32819b3d5b287
 
 COCOAPODS: 1.5.3

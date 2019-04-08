@@ -32,8 +32,8 @@ class PPHomeRecomendViewController: PPItemBaseViewController {
     }()
     
     /// 轮播图
-    lazy private var banner:SXBanner = {
-        let banner = SXBanner(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: UIScreen.main.bounds.size.width))
+    lazy private var banner:SXBannerView = {
+        let banner = SXBannerView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: UIScreen.main.bounds.size.width))
         banner.pageControlAlignment = Right
         banner.pageControlShape = Pencil
         

@@ -6,12 +6,12 @@
 //  Copyright © 2019年 zsx. All rights reserved.
 //
 
-#import "SXBanner.h"
+#import "SXBannerView.h"
 
 #import <SDWebImage/UIImageView+WebCache.h>
 #import "SXPageControl.h"
 
-@interface SXBanner()<UIScrollViewDelegate>
+@interface SXBannerView()<UIScrollViewDelegate>
 
 @property(nonatomic,strong)UIScrollView *mainSv;
 @property(nonatomic,strong)SXPageControl *pageControl;
@@ -21,13 +21,13 @@
 @property(nonatomic,strong)NSTimer *timer;
 @end
 
-@implementation SXBanner
+@implementation SXBannerView
 
 - (instancetype)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
     if (self) {
-       
+        self.backgroundColor = UIColor.orangeColor;
     }
     return self;
 }

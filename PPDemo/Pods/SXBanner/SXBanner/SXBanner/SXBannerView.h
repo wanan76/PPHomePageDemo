@@ -10,7 +10,7 @@
 #import "SXBannerEnum.h"
 NS_ASSUME_NONNULL_BEGIN
 
-@interface SXBanner : UIView
+@interface SXBannerView : UIView
 /**
  设置banner图片数组
  元素可以是:

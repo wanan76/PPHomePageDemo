@@ -1,0 +1,6 @@
+framework module SXBanner {
+  umbrella header "SXBanner-umbrella.h"
+
+  export *
+  module * { export * }
+}

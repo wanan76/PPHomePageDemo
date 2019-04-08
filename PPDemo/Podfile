@@ -9,7 +9,7 @@ target 'PPDemo' do
 
   pod 'Alamofire'
   pod 'SnapKit'
-  pod 'SDWebImage'
+  pod 'SXBanner'
 
   target 'PPDemoTests' do
     inherit! :search_paths

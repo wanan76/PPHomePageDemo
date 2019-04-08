@@ -21,8 +21,6 @@
 		07D3E03922563F070034D04F /* PPHomeOtherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D3E03822563F070034D04F /* PPHomeOtherViewController.swift */; };
 		07D3E03D2257223C0034D04F /* PPItemBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D3E03C2257223C0034D04F /* PPItemBaseViewController.swift */; };
 		07D3E03F225722580034D04F /* PPItemPageDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D3E03E225722580034D04F /* PPItemPageDelegate.swift */; };
-		07F41BB62259C06600426E09 /* SXBanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 07F41BB12259C06600426E09 /* SXBanner.m */; };
-		07F41BB72259C06600426E09 /* SXPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 07F41BB32259C06600426E09 /* SXPageControl.m */; };
 		07F41BBF2259C6D400426E09 /* PPRecommendCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F41BBE2259C6D400426E09 /* PPRecommendCategoryView.swift */; };
 		07F41BC12259D34700426E09 /* PPRecommendCatrgoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F41BC02259D34700426E09 /* PPRecommendCatrgoryCollectionViewCell.swift */; };
 		07F41BC3225A0FEC00426E09 /* PPRecommendRecommendView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F41BC2225A0FEC00426E09 /* PPRecommendRecommendView.swift */; };
@@ -67,11 +65,6 @@
 		07D3E03C2257223C0034D04F /* PPItemBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PPItemBaseViewController.swift; sourceTree = "<group>"; };
 		07D3E03E225722580034D04F /* PPItemPageDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PPItemPageDelegate.swift; sourceTree = "<group>"; };
 		07F41BB02259C06500426E09 /* PPDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PPDemo-Bridging-Header.h"; sourceTree = "<group>"; };
-		07F41BB12259C06600426E09 /* SXBanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SXBanner.m; sourceTree = "<group>"; };
-		07F41BB22259C06600426E09 /* SXPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SXPageControl.h; sourceTree = "<group>"; };
-		07F41BB32259C06600426E09 /* SXPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SXPageControl.m; sourceTree = "<group>"; };
-		07F41BB42259C06600426E09 /* SXBannerEnum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SXBannerEnum.h; sourceTree = "<group>"; };
-		07F41BB52259C06600426E09 /* SXBanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SXBanner.h; sourceTree = "<group>"; };
 		07F41BBE2259C6D400426E09 /* PPRecommendCategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PPRecommendCategoryView.swift; sourceTree = "<group>"; };
 		07F41BC02259D34700426E09 /* PPRecommendCatrgoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PPRecommendCatrgoryCollectionViewCell.swift; sourceTree = "<group>"; };
 		07F41BC2225A0FEC00426E09 /* PPRecommendRecommendView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PPRecommendRecommendView.swift; sourceTree = "<group>"; };
@@ -134,7 +127,6 @@
 			isa = PBXGroup;
 			children = (
 				07D3E006225500A90034D04F /* AppDelegate.swift */,
-				07F41BAF2259C02B00426E09 /* Banner */,
 				07D3E0292255056D0034D04F /* HomeBase */,
 				07D3E028225505580034D04F /* Home */,
 				07D3E00D225500AB0034D04F /* Assets.xcassets */,
@@ -192,18 +184,6 @@
 				07D3E0342256399D0034D04F /* PPItemsScrollDelegate.swift */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		07F41BAF2259C02B00426E09 /* Banner */ = {
-			isa = PBXGroup;
-			children = (
-				07F41BB52259C06600426E09 /* SXBanner.h */,
-				07F41BB12259C06600426E09 /* SXBanner.m */,
-				07F41BB42259C06600426E09 /* SXBannerEnum.h */,
-				07F41BB22259C06600426E09 /* SXPageControl.h */,
-				07F41BB32259C06600426E09 /* SXPageControl.m */,
-			);
-			path = Banner;
 			sourceTree = "<group>";
 		};
 		07F41BB82259C5B200426E09 /* Recommend */ = {
@@ -404,12 +384,14 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-PPDemo/Pods-PPDemo-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SXBanner/SXBanner.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SXBanner.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -431,10 +413,8 @@
 				07F41BC12259D34700426E09 /* PPRecommendCatrgoryCollectionViewCell.swift in Sources */,
 				07F41BBF2259C6D400426E09 /* PPRecommendCategoryView.swift in Sources */,
 				07D3E03D2257223C0034D04F /* PPItemBaseViewController.swift in Sources */,
-				07F41BB72259C06600426E09 /* SXPageControl.m in Sources */,
 				07D3E02D225506540034D04F /* PPHomeBaseTopView.swift in Sources */,
 				07F41BC3225A0FEC00426E09 /* PPRecommendRecommendView.swift in Sources */,
-				07F41BB62259C06600426E09 /* SXBanner.m in Sources */,
 				07F41BCF225A59C400426E09 /* PPRecommendLoveView.swift in Sources */,
 				07F41BCB225A364B00426E09 /* PPRecommendTableView.swift in Sources */,
 				07D3E0352256399D0034D04F /* PPItemsScrollDelegate.swift in Sources */,
